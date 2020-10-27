@@ -1,0 +1,61 @@
+
+.home{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.banner{
+    color:white;
+    letter-spacing: 0.2rem;
+    font-style: italic;
+    margin-top: -80px;
+    padding:10px;
+    animation-name: texts;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes texts{
+    0%{
+    opacity:1;
+    transform:scale(1);
+    }
+
+    50%{
+      opacity: 0;  
+    }
+
+    100%{
+      opacity: 1;  
+    }
+}
+
+
+@media screen and (min-width:664px){
+  .home{
+    min-height: 80vh;
+
+  }
+
+  .banner h1{
+   font-size:50px;
+  }
+}
+
+@media screen and (min-width:964px){
+    .home{
+      min-height: 90vh;
+  
+    }
+  
+  }
+
+
+
